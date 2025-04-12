@@ -2,7 +2,7 @@
 
 export default function Hero() {
   return (
-    <div>
+    <div className="">
       <section className="w-max-full h-screen flex items-center justify-center overflow-hidden relative bg-none">
         {/* Background Overlay */}
         <div className="absolute inset-0 w-full overflow-hidden z-0" 
@@ -13,7 +13,7 @@ export default function Hero() {
           backgroundRepeat: 'no-repeat', // Prevents the image from repeating
         }}></div> {/* Dark overlay for contrast */}
 
-        <div className="relative z-10 w-full px-80 text-center text-[#F3F4F6]">
+        <div className="relative z-10 w-full px-50  text-center text-[#F3F4F6]">
           <h1 className="mb-4 text-3xl font-extrabold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl leading-tight">
             Providing Cutting-Edge
             <span className="relative whitespace-nowrap text-[#0EB494] dark:text-[#0EB494]">

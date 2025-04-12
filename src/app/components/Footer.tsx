@@ -9,7 +9,7 @@ export default function Footer2() {
                 <div className="max-w-screen-lg px-4 sm:px-6 text-gray-800 sm:grid md:grid-cols-4 sm:grid-cols-2 mx-auto">
                     {/* col 1 */}
                     <div className='p-5'>
-                        <h3 className="font-bold text-indigo-600">Dev and Clouds</h3>
+                        <h5 className="font-semibold text-xs text-indigo-600">Dev and Clouds</h5>
                         <p>Dev and Clouds, based in Munich, Germany, provides IT solutions to enterprises and SMEs worldwide.</p>
 
                         {/* Social media section */}
@@ -41,7 +41,7 @@ export default function Footer2() {
                     </div>
                     {/* col 2 */}
                     <div className="p-5">
-                        <div className="text-sm uppercase text-indigo-600 font-bold">Resources</div>
+                        <div className="font-semibold text-xs  uppercase text-indigo-600 ">Resources</div>
                         <Link href="/#">
                         Certifications <span className="text-teal-600 text-xs p-1"></span>
                         </Link>
@@ -57,20 +57,20 @@ export default function Footer2() {
                     </div>
                     {/* col 3 */}
                     <div className="p-5">
-                    <div className="text-sm uppercase text-indigo-600 font-bold">Support</div>
-                    <Link href="/#">
-                    Help Center <span className="text-teal-600 text-xs p-1">24/7</span>
-                    </Link>
-                    <Link href="/#">
-                    Privacy Policy <span className="text-teal-600 text-xs p-1"></span>
-                    </Link>
-                    <Link href="/#">
-                    Conditons <span className="text-teal-600 text-xs p-1"></span>
-                    </Link>
+                    <div className="font-semibold text-xs uppercase text-indigo-600">Support</div>
+                        <Link href="/#">
+                        Help Center <span className="text-teal-600 text-xs p-1">24/7</span>
+                        </Link>
+                        <Link href="/#">
+                        Privacy Policy <span className="text-teal-600 text-xs p-1"></span>
+                        </Link>
+                        <Link href="/#">
+                        Conditons <span className= " text-teal-600 text-xs p-1"></span>
+                        </Link>
                     </div>
                     {/* col 4 */}
                     <div className='p-5'>
-                        <div className="text-sm uppercase text-indigo-600 font-bold">Contact Us</div>
+                        <div className=" font-semibold text-xs uppercase text-indigo-600 ">Contact Us</div>
                         <Link href="/#">
                             XXX XXXX, Floor 4 RothernBurger str.145, Nuremberg Germany <span className="text-teal-600 text-xs p-1"></span>
                         </Link>
@@ -79,7 +79,25 @@ export default function Footer2() {
                         </Link>
                     </div>
                 </div>
+                <div className="max-w-screen-lg px-4 sm:px-6 flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row mx-auto">
+                    <p className="text-sm text-gray-600">
+                    © Copyright 2020 Lorem Inc. All rights reserved.
+                    </p>
+                    <ul className="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row ">
+                    <li>
+                        <a href="/" className="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">F.A.Q</a>
+                    </li>
+                    <li>
+                        <a href="/" className="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="/" className="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">Terms &amp; Conditions</a>
+                    </li>
+                    </ul>
+                </div>
+            
             </div>
+            
         </section>
     );
 }

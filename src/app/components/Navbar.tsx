@@ -84,7 +84,7 @@ const Navbar = () => {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
     return (
-        <header className="bg-[#1E2A47] border-b-4 border-[#4A5F7F] text-[#F3F4F6] sticky top-0 z-50">
+        <header className="bg-[#1E2A47] border-b-4 border-[#4A5F7F] text-[#F3F4F6] sticky top-0 z-50 ">
         <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
           <div className="flex h-16 items-center justify-between">
             <div className="flex-1 md:flex md:items-center md:gap-12">
@@ -98,10 +98,7 @@ const Navbar = () => {
               <nav aria-label="Global" className="hidden md:block text-[#F3F4F6]">
                 <ul className="flex items-center gap-6 text-sm">
                   <li>
-                    <a id="team-link" className="text-[#949FAF] transition hover:text-[#0EB494] relative" href="/about"> 
-                    About 
-                    <span className="absolute bottom-[-40px] left-0 w-full h-[2px] bg-[#0EB494] transition-all duration-300 ease-in-out opacity-0 group-hover:opacity-100"></span>
-                    </a>
+                    <a id="team-link" className="text-[#949FAF] transition hover:text-[#0EB494] relative" href="/about"> About</a>
                   </li>
       
                   <li className="relative group">
@@ -121,29 +118,29 @@ const Navbar = () => {
                     </div>
 
                     {/* Dropdown Menu */}
-                    <ul className="absolute left-0 top-[52px] w-48 bg-white text-gray-700 px-4 py-3 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out z-50">
-                        <li className="py-2 hover:text-black hover:bg-gray-100 rounded-md transition">
+                    <ul className="absolute left-0 top-[58px] w-48 bg-white text-gray-700 px-4 py-3 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out z-50">
+                        <li className="py-2 hover:text-[#0EB494] hover:bg-white rounded-md transition">
                         <Link href="/services/corporate-networking">Corporate Networking</Link>
                         </li>
-                        <li className="py-2 hover:text-black hover:bg-gray-100 rounded-md transition">
+                        <li className="py-2 hover:text-[#0EB494] hover:bg-white rounded-md transition">
                         <Link href="/services/cloud-computing">Cloud Computing</Link>
                         </li>
-                        <li className="py-2 hover:text-black hover:bg-gray-100 rounded-md transition">
+                        <li className="py-2 hover:text-[#0EB494] hover:bg-white rounded-md transition">
                         <Link href="/services/managed-services">Managed Services</Link>
                         </li>
-                        <li className="py-2 hover:text-black hover:bg-gray-100 rounded-md transition">
+                        <li className="py-2 hover:text-[#0EB494] hover:bg-white rounded-md transition">
                         <Link href="/services/universal-communications">Universal Communications</Link>
                         </li>
-                        <li className="py-2 hover:text-black hover:bg-gray-100 rounded-md transition">
+                        <li className="py-2 hover:text-[#0EB494] hover:bg-white rounded-md transition">
                         <Link href="/services/disaster-recovery">Disaster Recovery</Link>
                         </li>
-                        <li className="py-2 hover:text-black hover:bg-gray-100 rounded-md transition">
+                        <li className="py-2 hover:text-[#0EB494] hover:bg-white rounded-md transition">
                         <Link href="/services/audit-compliance">Audit Compliance</Link>
                         </li>
-                        <li className="py-2 hover:text-black hover:bg-gray-100 rounded-md transition">
+                        <li className="py-2 hover:text-[#0EB494] hover:bg-white rounded-md transition">
                         <Link href="/services/software-development">Software Development</Link>
                         </li>
-                        <li className="py-2 hover:text-black hover:bg-gray-100 rounded-md transition">
+                        <li className="py-2 hover:text-[#0EB494] hover:bg-white rounded-md transition">
                         <Link href="/services/mobile-app-development">Mobile App Development</Link>
                         </li>
                     </ul>
@@ -151,41 +148,23 @@ const Navbar = () => {
       
                   <li>
                   <a id="team-link"
-                    className="text-[#949FAF] transition hover:text-[#0EB494] duration-300 ease-in-out relative"
-                    href="/team"
-                  >
-                    Team
-                    <span className="absolute bottom-[-40px] left-0 w-full h-[2px] bg-[#0EB494] transition-all duration-300 ease-in-out opacity-0 group-hover:opacity-100"></span>
-                  </a>
+                    className="text-[#949FAF] transition hover:text-white duration-300 ease-in-out relative" href="/team">Team</a>
                   </li>
       
                   <li>
                   <a id="team-link"
-                    className="text-[#949FAF] transition hover:text-[#0EB494] duration-300 ease-in-out relative"
-                    href="/team"
-                  >
-                    Our Clients
-                    <span className="absolute bottom-[-40px] left-0 w-full h-[2px] bg-[#0EB494] transition-all duration-300 ease-in-out opacity-0 group-hover:opacity-100"></span>
-                  </a>
+                    className="text-[#949FAF] transition hover:text-white duration-300 ease-in-out relative" href="/team"> Our Clients</a>
                   </li>
       
                   <li>
-                    <a id="team-link" className="text-[#949FAF] transition hover:text-[#0EB494] relative" href="/schedule"> 
-                    Schedule To Discuss <span className="absolute bottom-[-40px] left-0 w-full h-[2px] bg-[#0EB494] transition-all duration-300 ease-in-out opacity-0 group-hover:opacity-100"></span>
-                    </a>
+                    <a id="team-link" className="text-[#949FAF] transition hover:text-white relative" href="/schedule"> Schedule To Discuss </a>
                   </li>
       
                   <li>
-                    <a id="team-link" className="text-[#949FAF] transition hover:text-[#0EB494] relative" href="/blog"> 
-                    Blog 
-                    <span className="absolute bottom-[-40px] left-0 w-full h-[2px] bg-[#0EB494] transition-all duration-300 ease-in-out opacity-0 group-hover:opacity-100"></span>
-                    </a>
+                    <a id="team-link" className="text-[#949FAF] transition hover:text-white relative" href="/blog"> Blog </a>
                   </li>
                   <li>
-                    <a id="team-link" className="text-[#949FAF] transition hover:text-[#0EB494] relative" href="/contact"> 
-                    Contact 
-                    <span className="absolute bottom-[-40px] left-0 w-full h-[2px] bg-[#0EB494] transition-all duration-300 ease-in-out opacity-0 group-hover:opacity-100"></span>
-                    </a>
+                    <a id="team-link" className="text-[#949FAF] transition hover:text-white relative" href="/contact"> Contact </a>
                   </li>
                 </ul>
               </nav>
